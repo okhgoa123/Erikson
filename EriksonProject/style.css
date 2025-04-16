@@ -1,0 +1,178 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 40px;
+}
+
+#one
+{
+    width: 20%;
+    height: 5%;
+    background-color: green;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    
+}
+
+#two
+{
+    width: 20%;
+    height: 5%;
+    transform: translate(100%);
+    background-color: red;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+#three
+{
+    width: 15.7%;
+    height: 5%;
+    transform: translate(152%, 483%);
+    background-color: red;
+    border-width: 3px;
+    border-color: black;
+}
+
+#four
+{
+    width: 15.7%;
+    height: 5%;
+    transform: translate(51%, 483%);
+    background-color: green;
+    border-width: 3px;
+    border-color: black;
+}
+
+
+
+#five
+{
+    width: 15.7%;
+    height: 5%;
+    transform: translate(51%, 963%);
+    background-color: green;
+    border-width: 3px;
+    border-color: black;
+}
+
+#six
+{
+    width: 15.7%;
+    height: 5%;
+    transform: translate(152%, 963%);
+    background-color: red;
+    border-width: 3px;
+    border-color: black;
+}
+
+#seven
+{
+    width: 15.7%;
+    height: 5%;
+    transform: translate(152%, 1445%);
+    background-color: red;
+    border-width: 3px;
+    border-color: black;
+}
+
+#eight
+{
+    width: 15.7%;
+    height: 5%;
+    transform: translate(51%, 1445%);
+    background-color: green;
+    border-width: 3px;
+    border-color: black;
+}
+
+#nine
+{
+    width: 18%;
+    height: 5%;
+    transform: translate(44.5%, 1927%);
+    background-color: green;
+    border-width: 3px;
+    border-color: black;
+}
+
+#ten
+{
+    width: 18%;
+    height: 5%;
+    transform: translate(145%, 1927%);
+    background-color: red;
+    border-width: 3px;
+    border-color: black;
+}
+
+#snake1
+{
+    width: 8%;
+    height: 29%;
+    position: absolute;
+    transform: translate(495%);
+}
+
+#snake2
+{
+    width: 8%;
+    height: 29%;
+    position: absolute;
+    transform: translate(0%, 83%)
+}
+
+#snake3
+{
+    width: 8%;
+    height: 29%;
+    position: absolute;
+    transform: translate(495%, 166%);
+}
+
+#snake4
+{
+    width: 8%;
+    height: 29%;
+    position: absolute;
+    transform: translate(0%, 249%);
+}
+.snake
+{
+    width: 100%;
+    height: 100%;
+}
+
+.section
+{
+    position: absolute
+}
+
+#trust
+{
+    position:absolute;
+    transform: translate(20%, 80%);
+    font-size: 2vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.container {
+    height: 90%;
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .section:hover {
+    box-shadow: 0 0 10px 10px white !important;
+    z-index: 50;
+  }
