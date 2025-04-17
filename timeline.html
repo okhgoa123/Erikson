@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            //redirect to timeline
+            function redirectTimeline()
+            {
+                window.location.href = "timeline.html";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "index.html";
+            }
+            function redirectDevelopment()
+            {
+                window.location.href = "stage1Dev.html";
+            }
+        </script>
+        <script src="timeline.js"></script>
+        <div class="heading">
+            <p id="headingTitle">Erikson's</p>
+            <button class="headButton" id="aboutButton" onclick="redirectAbout()">About</button>
+            <button class="headButton" id="developmentalButton"  onclick="redirectDevelopment()">Developmental</button>
+            <button class="headButton" id="timelineButton"  style="text-shadow: white 0 0 20px;">Timeline</button>
+        </div>
+        <p id="disclaimer">Click a stage to see more details.</p>
+        <div class="container">
+            <div id="one" class="section"></div>
+            <p id="trust">Trust vs. Mistrust</p>
+            <div id="two" class="section"></div>
+            <div id="snake1"><img src="snake.png" class="snake"></div>
+            <div id="three" class="section"></div>
+            <div id="four" class="section"></div>
+            <div id="snake2"><img src="snake2.png" class="snake"></div>
+            <div id="five" class="section"></div>
+            <div id="six" class="section"></div>
+            <div id="snake3"><img src="snake.png" class="snake"></div>
+            <div id="seven" class="section"></div>
+            <div id="eight" class="section"></div>
+            <div id="snake4"><img src="snake2.png" class="snake"></div>
+            <div id="nine" class="section"></div>
+            <div id="ten" class="section"></div>
+            <img src="start.png" class="blip"  id="start">
+            <img src="end.png" class="blip"  id="end">
+            <p id="autonomy">Autonomy vs. Shame and Doubt</p>
+            <p id="initiative">Initiative vs. Guilt</p>
+            <p id="industry">Industry vs. Inferiority</p>
+            <p id="identity">Identity vs. Role Confusion</p>
+            <p id="identity2">Identity vs. Role Confusion</p>
+            <p id="intimacy">Intimacy vs. Isolation</p>
+            <p id="generativity">Generativity vs. Stagnation</p>
+            <p id="integrity">Integrity vs. Despair</p>
+            
+            <div style="height:150vh;"></div>
+        </div>
+        <div class="widget">
+
+        </div>
+        
+    </body>
+</html>
