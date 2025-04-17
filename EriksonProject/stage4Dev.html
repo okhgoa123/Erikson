@@ -1,6 +1,8 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <style>
+
+        </style>
     </head>
     <body>
         <script>
@@ -17,7 +19,10 @@
             {
                 window.location.href = "stage1Dev.html";
             }
-
+            function next()
+            {
+                window.location.href = "stage5Dev.html"
+            }
         </script>
         <div class="heading">
             <p id="headingTitle">Erikson's</p>
@@ -25,14 +30,17 @@
             <button class="headButton" id="developmentalButton" onclick="redirectDevelopment()">Developmental</button>
             <button class="headButton" id="timelineButton" onclick="redirectTimeline()" style="text-shadow: white 0 0 20px;">Timeline</button>
         </div>
+        <hr>
         <button id="back" onclick="redirectTimeline()">Back</button>
+        <hr>
         <div id="infoContainer">
-            <h1 id="stageName">Intimacy vs. Isolation</h1>
-            <img src="Photos/friends.jpg" class="stageImage">
-            <p class="caption">My friend group.</p>
-            <h2 id="reflectionHeader">Explanation</h2>
-            <p class="reflection">As I'm most likely staying in Hawaii to receive my computer science degree, I am likely to maintain and even strengthen the bonds I have with my current friend group, many of whom are also remaining here in Hawaii and some are also taking computer science as well. We may grow closer due to the shared interest in computers that we have later on in life, especially as it becomes an integral part of our identities.</p>
+            <h1 id="stageName" style="text-align: center;">Industry vs. Inferiority</h1>
+            <img src="Photos/Yes.jpg" style="text-align: center; width: 30vw; margin-left:auto; margin-right: auto;" class="stageImage">
+            <p class="caption" style="text-align: center;">Learning a song on the keyboard</p>
+            <h2 id="reflectionHeader" style="text-align: center;">Explanation</h2>
+            <p class="reflection" style="text-align: center;">At this stage, I started practicing songs on the piano, demonstrating a competency towards musical performance which still lingers today. Additionally, my English and Math proficency grew significantly at this point in time, instilling in me a strong sense of competency towards a variety of fields.</p>
         </div>
+        <button onclick="next()">Next</button>
         
     </body>
 </html>

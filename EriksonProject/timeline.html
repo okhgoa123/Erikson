@@ -13,12 +13,16 @@
             {
                 window.location.href = "index.html";
             }
+            function redirectDevelopment()
+            {
+                window.location.href = "stage1Dev.html";
+            }
         </script>
         <script src="timeline.js"></script>
         <div class="heading">
             <p id="headingTitle">Erikson's</p>
             <button class="headButton" id="aboutButton" onclick="redirectAbout()">About</button>
-            <button class="headButton" id="developmentalButton">Developmental</button>
+            <button class="headButton" id="developmentalButton"  onclick="redirectDevelopment()">Developmental</button>
             <button class="headButton" id="timelineButton"  style="text-shadow: white 0 0 20px;">Timeline</button>
         </div>
         <p id="disclaimer">Click a stage to see more details.</p>

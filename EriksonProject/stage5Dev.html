@@ -1,0 +1,54 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <style>
+            body
+            {
+                padding: 0;
+                border: 0;
+            }
+        </style>
+        <script>
+            //redirect to timeline
+            function redirectTimeline()
+            {
+                window.location.href = "timeline.html";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "index.html";
+            }
+            function redirectDevelopment()
+            {
+                window.location.href = "stage1Dev.html";
+            }
+            function next()
+            {
+                window.location.href = "stage6Dev.html"
+            }
+        </script>
+        <div class="heading" style="background-color: black; width: 100vw; height: 8vh;">
+            <p id="headingTitle">Erikson's</p>
+            <button class="headButton" id="aboutButton" onclick="redirectAbout()">About</button>
+            <button class="headButton" id="developmentalButton" onclick="redirectDevelopment()">Developmental</button>
+            <button class="headButton" id="timelineButton" onclick="redirectTimeline()" style="text-shadow: white 0 0 20px;">Timeline</button>
+        </div>
+        <hr>
+        <button id="back" onclick="redirectTimeline()">Back</button>
+        <hr>
+    
+        <div id="infoContainer">
+            <h1 id="stageName" style="text-align: center;">Identity vs. Role Confusion</h1>
+            <div style="width: 100vw; align-items: center;">
+                <img style="width: 30vw;display: block;margin-left: auto;margin-right: auto;"src="Photos/orchestra.jpg" class="stageImage">
+                <img src="Photos/coding.jpg" style="width: 30vw;display: block;margin-left: auto;margin-right: auto;" class="stageImage">
+            </div>
+            
+            <p class="caption" style="text-align: center;">1st: Playing in the Roosevelt Symphonic Orchestra. <br>2nd: Working to fix a programming error with my peers.</p>
+            <h2 id="reflectionHeader" style="text-align: center;">Explanation</h2>
+            <p class="reflection" style="text-align: center;">As a violin player who started back in my early teenage years and continuing to play in the orchestra, I have explored and engaged with my artistic/creative identity through my musical ability. By also learning to code recently, I have also experienced a more practical and tech-oriented part of my identity. As I am currently in this stage, I am currently eaving diffusion and nearing identity achievement by choosing to follow the computer science route in college and later on in my career.</p>
+        </div>
+        <button onclick="next()">Next</button>
+    </body>
+</html>

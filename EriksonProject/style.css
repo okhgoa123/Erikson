@@ -330,6 +330,21 @@ p {
     border-radius: 20px;
 }
 
+#next
+{
+    position: absolute;
+    width: 5vw;
+    height: 5vh;
+    font-size: 3vh;
+    z-index: 100;
+    color: white;
+    top: 105vh;
+    left: 50vw;
+    transform: translate(-50%, 0);
+    background-color: rgb(24, 24, 24);
+    border-radius: 20px;
+}
+
 #back:hover
 {
     animation-name: scaleButton;
