@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            //redirect to timeline
+            function redirectTimeline()
+            {
+                window.location.href = "timeline.html";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "index.html";
+            }
+            function redirectDevelopment()
+            {
+                window.location.href = "stage1Dev.html";
+            }
+        </script>
+        <div class="heading">
+            <p id="headingTitle">Erikson's</p>
+            <button class="headButton" id="aboutButton" onclick="redirectAbout()">About</button>
+            <button class="headButton" id="developmentalButton" onclick="redirectDevelopment()">Developmental</button>
+            <button class="headButton" id="timelineButton" onclick="redirectTimeline()" style="text-shadow: white 0 0 20px;">Timeline</button>
+        </div>
+        <button id="back" onclick="redirectTimeline()">Back</button>
+        <div id="infoContainer">
+            <h1 id="stageName">Iniative vs. Guilt</h1>
+            <div style="width: 100vw; align-items: center;">
+                <img src="Photos/DSCN0715.JPG" class="stageImage">
+                <img src="Photos/DSCN1335.JPG" class="stageImage">
+            </div>
+            
+            <p class="caption">1st: My first Halloween costume. <br>2nd: Me plucking a few flowers after having explored the yard</p>
+            <h2 id="reflectionHeader">Explanation</h2>
+            <p class="reflection">By this time, I was looking forward to start trick or treating as I had seen my cousins and sister do so before. I chose my own costume to wear that night and was very happy that I was able to do some of the things I wanted. Additionally, I started exploring my home's massive yard a couple of times on my own whim, plucking out some flowers and plants I found interesting. Being able to have that freedom to start exploring was exciting for me, but at times I was anxious of the occasional scoldings, especially if I got dirty.</p>
+        </div>
+        
+    </body>
+</html>

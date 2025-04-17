@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            //redirect to timeline
+            function redirectTimeline()
+            {
+                window.location.href = "timeline.html";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "index.html";
+            }
+            function redirectDevelopment()
+            {
+                window.location.href = "stage1Dev.html";
+            }
+        </script>
+        <div class="heading">
+            <p id="headingTitle">Erikson's</p>
+            <button class="headButton" id="aboutButton" onclick="redirectAbout()">About</button>
+            <button class="headButton" id="developmentalButton" onclick="redirectDevelopment()">Developmental</button>
+            <button class="headButton" id="timelineButton" onclick="redirectTimeline()" style="text-shadow: white 0 0 20px;">Timeline</button>
+        </div>
+        <button id="back" onclick="redirectTimeline()">Back</button>
+        <div id="infoContainer">
+            <h1 id="stageName">Identity vs. Role Confusion</h1>
+            <div style="width: 100vw; align-items: center;">
+                <img src="Photos/orchestra.jpg" class="stageImage">
+                <img src="Photos/coding.jpg" class="stageImage">
+            </div>
+            
+            <p class="caption">1st: Playing in the Roosevelt Symphonic Orchestra. <br>2nd: Working to fix a programming error with my peers.</p>
+            <h2 id="reflectionHeader">Explanation</h2>
+            <p class="reflection">As a violin player who started back in my early teenage years and continuing to play in the orchestra, I have explored and engaged with my artistic/creative identity through my musical ability. By also learning to code recently, I have also experienced a more practical and tech-oriented part of my identity. As I am currently in this stage, I am currently eaving diffusion and nearing identity achievement by choosing to follow the computer science route in college and later on in my career.</p>
+        </div>
+        
+    </body>
+</html>

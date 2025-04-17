@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            //redirect to timeline
+            function redirectTimeline()
+            {
+                window.location.href = "timeline.html";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "index.html";
+            }
+            function redirectDevelopment()
+            {
+                window.location.href = "stage1Dev.html";
+            }
+        </script>
+        <div class="heading">
+            <p id="headingTitle">Erikson's</p>
+            <button class="headButton" id="aboutButton" onclick="redirectAbout()">About</button>
+            <button class="headButton" id="developmentalButton" onclick="redirectDevelopment()" >Developmental</button>
+            <button class="headButton" id="timelineButton" onclick="redirectTimeline()" style="text-shadow: white 0 0 20px;">Timeline</button>
+        </div>
+        <button id="back" onclick="redirectTimeline()">Back</button>
+        <div id="infoContainer">
+            <h1 id="stageName">Autonomy vs. Shame and Doubt</h1>
+            <img src="Photos/DSC03067.JPG" class="stageImage">
+            <p class="caption">My mom holding me.</p>
+            <h2 id="reflectionHeader">Explanation</h2>
+            <p class="reflection">Other than learning to walk and roam around, I usually wasn't given much opportunities to seek my own autonomy and lacked independence. Even though I could walk, I was usually carried around. My parents often did most things for me at this age, such as choosing clothes and my food. I stayed very close to my parents and didn't like to wander off. Overall, this caused me to doubt and question some of my own decisions later in life as I got older due to my lack of experience with autonomy.</p>
+        </div>
+        
+    </body>
+</html>

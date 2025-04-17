@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            //redirect to timeline
+            function redirectTimeline()
+            {
+                window.location.href = "timeline.html";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "index.html";
+            }
+            function redirectDevelopment()
+            {
+                window.location.href = "stage1Dev.html";
+            }
+        </script>
+        <div class="heading">
+            <p id="headingTitle">Erikson's</p>
+            <button class="headButton" id="aboutButton" onclick="redirectAbout()">About</button>
+            <button class="headButton" id="developmentalButton" onclick="redirectDevelopment()">Developmental</button>
+            <button class="headButton" id="timelineButton" onclick="redirectTimeline()" style="text-shadow: white 0 0 20px;">Timeline</button>
+        </div>
+        <button id="back" onclick="redirectTimeline()">Back</button>
+        <div id="infoContainer">
+            <h1 id="stageName">Industry vs. Inferiority</h1>
+            <img src="Photos/Yes.jpg" class="stageImage">
+            <p class="caption">Learning a song on the keyboard</p>
+            <h2 id="reflectionHeader">Explanation</h2>
+            <p class="reflection">At this stage, I started practicing songs on the piano, demonstrating a competency towards musical performance which still lingers today. Additionally, my English and Math proficency grew significantly at this point in time, instilling in me a strong sense of competency towards a variety of fields.</p>
+        </div>
+        
+    </body>
+</html>

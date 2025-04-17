@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            //redirect to timeline
+            function redirectTimeline()
+            {
+                window.location.href = "timeline.html";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "index.html";
+            }
+            function redirectDevelopment()
+            {
+                window.location.href = "stage1Dev.html";
+            }
+        </script>
+        <div class="heading">
+            <p id="headingTitle">Erikson's</p>
+            <button class="headButton" id="aboutButton" onclick="redirectAbout()">About</button>
+            <button class="headButton" id="developmentalButton" onclick="redirectDevelopment()">Developmental</button>
+            <button class="headButton" id="timelineButton" onclick="redirectTimeline()" style="text-shadow: white 0 0 20px;">Timeline</button>
+        </div>
+        <button id="back" onclick="redirectTimeline()">Back</button>
+        <div id="infoContainer">
+            <h1 id="stageName">Intimacy vs. Isolation</h1>
+            <img src="Photos/friends.jpg" class="stageImage">
+            <p class="caption">My friend group.</p>
+            <h2 id="reflectionHeader">Explanation</h2>
+            <p class="reflection">As I'm most likely staying in Hawaii to receive my computer science degree, I am likely to maintain and even strengthen the bonds I have with my current friend group, many of whom are also remaining here in Hawaii and some are also taking computer science as well. We may grow closer due to the shared interest in computers that we have later on in life, especially as it becomes an integral part of our identities.</p>
+        </div>
+        
+    </body>
+</html>

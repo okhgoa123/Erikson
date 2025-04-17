@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            //redirect to timeline
+            function redirectTimeline()
+            {
+                window.location.href = "timeline.html";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "index.html";
+            }
+            function redirectDevelopment()
+            {
+                window.location.href = "stage1Dev.html";
+            }
+        </script>
+        <div class="heading">
+            <p id="headingTitle">Erikson's</p>
+            <button class="headButton" id="aboutButton" onclick="redirectAbout()">About</button>
+            <button class="headButton" id="developmentalButton" onclick="redirectDevelopment()">Developmental</button>
+            <button class="headButton" id="timelineButton" onclick="redirectTimeline()" style="text-shadow: white 0 0 20px;">Timeline</button>
+        </div>
+        <button id="back" onclick="redirectTimeline()">Back</button>
+        <div id="infoContainer">
+            <h1 id="stageName">Integrity vs. Despair</h1>
+            <img src="Photos/reflection.jpg" class="stageImage">
+            <p class="caption">Reflecting on life in the wilderness.</p>
+            <h2 id="reflectionHeader">Explanation</h2>
+            <p class="reflection">As my life comes to a close, I would reflect on my life. I may find satisfaction in the work I have done, especially in my career field of computer science and how I have helped humanity through the devices and technology that I developed, but also bringing those values to my children. I would think that my life was well-lived.</p>
+        </div>
+        
+    </body>
+</html>

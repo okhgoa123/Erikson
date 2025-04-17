@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            //redirect to timeline
+            function redirectTimeline()
+            {
+                window.location.href = "timeline.html";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "index.html";
+            }
+            function redirectDevelopment()
+            {
+                window.location.href = "stage1Dev.html";
+            }
+        </script>
+        <div class="heading">
+            <p id="headingTitle">Erikson's</p>
+            <button class="headButton" id="aboutButton" onclick="redirectAbout()">About</button>
+            <button class="headButton" id="developmentalButton" onclick="redirectDevelopment()">Developmental</button>
+            <button class="headButton" id="timelineButton" onclick="redirectTimeline()" style="text-shadow: white 0 0 20px;">Timeline</button>
+        </div>
+        <button id="back" onclick="redirectTimeline()">Back</button>
+        <div id="infoContainer">
+            <h1 id="stageName">Trust vs. Mistrust</h1>
+            <img src="Photos/Image304.jpg" class="stageImage">
+            <p class="caption">My grandmother attending to me a few days after my birth.</p>
+            <h2 id="reflectionHeader">Explanation</h2>
+            <p class="reflection">This picture represents the nurturing I received from my family. Since my family properly took care of me and consistently attended to me as a newborn like as shown in the photo, I was able to trust the people around me and developed a sense of safety.</p>
+        </div>
+        
+    </body>
+</html>
