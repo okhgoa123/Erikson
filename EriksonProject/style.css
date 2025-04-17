@@ -36,7 +36,7 @@ p {
     height: 5%;
     transform: translate(152%, 483%);
     background-color: red;
-    border-width: 3px;
+    border-width: 5px;
     border-color: black;
 }
 
@@ -161,6 +161,7 @@ p {
     font-size: 2vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    user-select: none;
 }
 .container {
     height: 90%;
@@ -172,6 +173,13 @@ p {
     transform: translate(-50%, -50%);
   }
 
+  .widget
+  {
+    height: 30%;
+    width: 10%;
+    background-color: yellow;
+    z-index: 60 !important;
+  }
   .section:hover {
     box-shadow: 0 0 10px 10px white !important;
     z-index: 50;
