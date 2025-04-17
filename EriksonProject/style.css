@@ -2,6 +2,7 @@ body
 {
     padding: 0;
     margin: 0;
+    background-color: rgb(15, 15, 15);
 }
 
 p {
@@ -12,9 +13,9 @@ p {
 {
     width: 20%;
     height: 5%;
-    background-color: green;
-    border-width: 5px;
-    border-color: black;
+    background-color: rgb(0, 105, 185);
+    border-color: white;
+    transform: translate(133%);
     border-style: solid;
     
 }
@@ -23,31 +24,31 @@ p {
 {
     width: 20%;
     height: 5%;
-    transform: translate(100%);
-    background-color: red;
-    border-width: 5px;
-    border-color: black;
+    transform: translate(232.5%);
+    background-color: rgb(0, 105, 185);
+    border-color: white;
     border-style: solid;
 }
+
 
 #three
 {
     width: 15.7%;
     height: 5%;
-    transform: translate(152%, 483%);
-    background-color: red;
-    border-width: 5px;
-    border-color: black;
+    transform: translate(321%, 445%);
+    background-color: rgb(0, 105, 185);
+    border-color: white;
+    border-style: solid;
 }
 
 #four
 {
     width: 15.7%;
     height: 5%;
-    transform: translate(51%, 483%);
-    background-color: green;
-    border-width: 3px;
-    border-color: black;
+    transform: translate(222%, 445%);
+    background-color: rgb(0, 105, 185);
+    border-style: solid;
+    border-color: white;
 }
 
 
@@ -56,92 +57,97 @@ p {
 {
     width: 15.7%;
     height: 5%;
-    transform: translate(51%, 963%);
-    background-color: green;
-    border-width: 3px;
-    border-color: black;
+    transform: translate(222%, 890%);
+    background-color: rgb(0, 105, 185);
+    border-color: white;
+    border-style: solid;
 }
 
 #six
 {
     width: 15.7%;
     height: 5%;
-    transform: translate(152%, 963%);
-    background-color: red;
-    border-width: 3px;
-    border-color: black;
+    transform: translate(321%, 890%);
+    background-color: rgb(0, 105, 185);
+    border-color: white;
+    border-style: solid;
+
 }
 
 #seven
 {
     width: 15.7%;
     height: 5%;
-    transform: translate(152%, 1445%);
-    background-color: red;
-    border-width: 3px;
-    border-color: black;
+    transform: translate(321%, 1337%);
+    background-color: rgb(0, 105, 185);
+    border-color: white;
+    border-style: solid;
 }
 
 #eight
 {
     width: 15.7%;
     height: 5%;
-    transform: translate(51%, 1445%);
-    background-color: green;
-    border-width: 3px;
-    border-color: black;
+    transform: translate(222%, 1337%);
+    background-color: rgb(0, 105, 185);
+    border-color: white;
+    border-style: solid;
 }
 
 #nine
 {
     width: 18%;
     height: 5%;
-    transform: translate(44.5%, 1927%);
-    background-color: green;
-    border-width: 3px;
-    border-color: black;
+    transform: translate(195%, 1780%);
+    background-color: rgb(0, 105, 185);
+    border-color: white;
+    border-style: solid;
 }
 
 #ten
 {
     width: 18%;
     height: 5%;
-    transform: translate(145%, 1927%);
-    background-color: red;
-    border-width: 3px;
-    border-color: black;
+    transform: translate(294%, 1780%);
+    background-color: rgb(0, 105, 185);
+    border-color: white;
+    border-style: solid;
 }
 
 #snake1
 {
     width: 8%;
-    height: 29%;
+    height: 32%;
     position: absolute;
-    transform: translate(495%);
+    transform: translate(850%);
+    user-select: none;
 }
 
 #snake2
 {
     width: 8%;
-    height: 29%;
+    height: 32%;
     position: absolute;
-    transform: translate(0%, 83%)
+    transform: translate(346%, 82.5%);
+    user-select: none;
 }
 
 #snake3
 {
     width: 8%;
-    height: 29%;
+    height: 32%;
     position: absolute;
-    transform: translate(495%, 166%);
+    transform: translate(850%, 165%);
+    user-select: none;
 }
 
 #snake4
 {
     width: 8%;
-    height: 29%;
+    height: 32%;
     position: absolute;
-    transform: translate(0%, 249%);
+    transform: translate(346%, 247%);
+    user-select: none;
 }
 .snake
 {
@@ -164,9 +170,10 @@ p {
     user-select: none;
 }
 .container {
+
     height: 90%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(15, 15, 15);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -176,10 +183,35 @@ p {
   .widget
   {
     height: 30%;
-    width: 10%;
-    background-color: yellow;
-    z-index: 60 !important;
+    width: 15%;
+    position: absolute;
+    background-color: rgb(35, 35, 35);
+    animation-name: widgetOn;
+    animation-duration: 0.5s;
+    clip-path: polygon(11% 14%, 100% 14%, 100% 100%, 0 100%, 0 0);
+    background-size: cover;
+
   }
+
+  .widgetPic
+  {
+    transform: translate(0, 50%);
+    height: 30%;
+    position: absolute;
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  @keyframes widgetOn {
+    0% {opacity: 0; transform: translate(0, 100%);}
+
+    100% {opacity: 1; transform: translate(0, 0%)}
+  }
+
   .section:hover {
     box-shadow: 0 0 10px 10px white !important;
     z-index: 50;
